@@ -1,0 +1,302 @@
+
+body > div{
+    position: relative;
+    width: 85%;
+    margin:4% auto 4% auto ;
+}
+#about p{
+    color: rgba(174,174,174,255);
+    font-family:Arial, Helvetica, sans-serif
+}
+#contact h3,
+.contacts 
+.contact-value, 
+.experience .experience-institution,
+.contacts .contact-type , 
+h2 ,
+ #about > h3{
+    display: none;
+}
+
+img{
+    position: absolute;
+    top: 0;
+    right: 10%;
+    width: 160px;
+    height: 160px;
+    transform: rotate(-20deg);
+}
+h1{
+    padding-bottom:2%;
+    border-bottom: 1px solid rgba(216,216,216,255);
+}
+#about p{
+    width: 70%;
+}
+#about{
+    margin-bottom: 13%;
+    display: flex;
+}
+
+#competencies{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 1%;
+    grid-template-areas: 
+    "h3 p1"
+    "h3 p2";
+    color: white;
+}
+#competencies h3{
+    grid-area: h3;
+    color: black;
+    border-right: 1px solid black;
+}
+
+.skills-primary{
+    grid-area: p1;
+    display: flex;
+    
+}
+.skills-secondary{
+    grid-area: p2;
+    display: flex;
+    font-size: 0.5rem;
+}
+.skill{
+    background-color: rgba(0,128,128,255);
+    width:20%;
+    margin: 0.5%;
+    padding: 1%;
+    
+}
+.skills-primary [data-skill="5"]::after{
+    content:'\2605' '\2605'  '\2605';
+    color: white;
+}
+.skills-primary [data-skill="3"]::after{
+    content:'\2605' '\2605' ;
+    color: white;
+}
+.skills-primary [data-skill="1"]::after{
+    content:'\2605' ;
+    color: white;
+}
+.skills-secondary [data-skill="9"]::after{
+    content:'\2605' '\2605'  '\2605'  '\2605'  '\2605' ;
+    color: white;
+}
+.skills-secondary [data-skill="5"]::after{
+    content:'\2605' '\2605'  '\2605'  ;
+    color: white;
+}
+.skills-secondary [data-skill="7"]::after{
+    content:'\2605' '\2605'  '\2605'  '\2605'  ;
+    color: white;
+}
+.skills-primary > *{
+    display: flex;
+    justify-content: space-between;
+}
+.skills-secondary > *{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#experiences{
+    display: grid;
+    margin: 4% 0px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:"h3 exp1" 
+    "h3 exp2";
+}
+
+#experiences h3{
+    grid-area: h3;
+    border-right: 1px solid black;
+    padding-right: 12px;
+    
+}
+#experiences .experience:nth-child(2){
+    grid-area:exp1;
+    
+}
+
+#experiences .experience:nth-child(2) h4{
+    color: rgba(9,132,132,255);
+    grid-area: h41;
+    float: left;
+    padding-left:16px ;
+}
+#experiences .experience:nth-child(2) .experience-details{
+    grid-area: h42;
+    float: right;
+}
+#experiences .experience:nth-child(2) .experience-description{
+    padding-left: 16px;
+    padding-top:25px;
+    clear:both;
+}
+#experiences .experience:nth-child(2) .experience-location,.day,.month,.year{
+    color: gray
+}
+#experiences .experience:nth-child(3) .experience-location,.day,.month,.year{
+    color: gray
+}
+#experiences .experience:nth-child(2) .experience-date-separator{
+    color:rgba(9,132,132,255);
+}
+#experiences .experience:nth-child(3) .experience-date-separator{
+    color:rgba(9,132,132,255);
+}
+#experiences .experience:nth-child(3) h4{
+    grid-area: h41;
+     color: rgba(9,132,132,255);
+    float: left;
+    padding-left:16px ;
+    padding-top: 25px;
+    
+}
+#experiences .experience:nth-child(3) .experience-details{
+    grid-area: h42;
+    float: right;
+    padding-top: 25px;
+}
+#experiences .experience:nth-child(3) .experience-description{
+    clear:both;
+    padding-left: 16px;
+    padding-top:25px;
+    padding-bottom: 20px;
+}
+#experiences .experience:nth-child(3){
+    
+    grid-area: exp2;
+}
+
+
+
+
+#education{
+    display: grid;
+    margin: 4% 0px;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:"h3 exp1" 
+    "h3 exp2";
+}
+
+#education h3{
+    grid-area: h3;
+    border-right: 1px solid black;
+    padding-right: 25px;
+    
+}
+#education .experience:nth-child(2){
+    grid-area:exp1;
+    
+}
+
+#education .experience:nth-child(2) h4{
+    color: rgba(9,132,132,255);
+    grid-area: h41;
+    float: left;
+    padding-left:16px ;
+}
+#education .experience:nth-child(2) .experience-details{
+    grid-area: h42;
+    float: right;
+}
+#education .experience:nth-child(2) .experience-description{
+    padding-left: 16px;
+    
+    padding-top:25px;
+    clear:both;
+}
+#education .experience:nth-child(2) .experience-location,.day,.month,.year{
+    color: gray
+}
+#education .experience:nth-child(3) .experience-location,.day,.month,.year{
+    color: gray
+}
+#education .experience:nth-child(2) .experience-date-separator{
+    color:rgba(9,132,132,255);
+}
+#education .experience:nth-child(3) .experience-date-separator{
+    color:rgba(9,132,132,255);
+}
+#education .experience:nth-child(3) h4{
+    grid-area: h41;
+     color: rgba(9,132,132,255);
+    float: left;
+    padding-left:16px ;
+    padding-top: 25px;
+    
+}
+#education .experience:nth-child(3) .experience-details{
+    grid-area: h42;
+    float: right;
+    padding-top: 25px;
+}
+#education .experience:nth-child(3) .experience-description{
+    clear:both;
+    padding-left: 16px;
+    padding-top:25px;
+    padding-bottom: 15px;
+}
+#education .experience:nth-child(3){
+    
+    grid-area: exp2;
+}
+
+#hobbies{
+display: grid;
+grid-template-columns:auto 1fr;
+grid-template-areas: "h3 ul"
+"h3 ul";
+
+}
+#hobbies h3{
+    grid-area: h3;
+    border-right: 1px solid black;
+    padding-right: 40px;
+}
+#hobbies ul{
+    grid-area: ul;
+    padding-left: 40px;
+    padding-bottom: 25px;
+}
+s
+
+.contact-email{
+    background-image: url(../images/email.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 100px;
+}
+.contact-phone{
+    background-image: url(../images/phone.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 100px;
+}
+.contact-github{
+    background-image: url(../images/github.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 100px;
+}
+.contact-facebook{
+    background-image: url(../images/facebook.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 15%;
+    height: 100px;
+}
+.contacts{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
